@@ -1,0 +1,6 @@
+Name: MoviePlanner
+Description: Plan a movie night based on search key and movie duration.
+Param: searchKey: The keyword or genre for searching movies (e.g., "Action", "Comedy").
+Param: duration: The preferred total duration for the movie night.
+
+#!/usr/bin/env npm --silent --prefix ${GPTSCRIPT_TOOL_DIR} run tool -- plan-movie
