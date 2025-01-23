@@ -1,29 +1,29 @@
-# Movie Recommendation Tool
+# TMDb Movie Concierge Tool
 
-A **Node.js-based movie recommendation tool** that uses **GPTScript** and the **TMDb API** to recommend the top-rated movies based on a search query. This tool is designed to be integrated into **Obot**, enabling AI agents to provide automated movie suggestions.
+A **Node.js-based movie concierge tool** that uses **GPTScript** and the **TMDb API** to recommend the top-rated movies based on a search query. This tool is designed to be integrated into platforms like **Otto8**, enabling AI agents to provide automated movie suggestions.
 
 ---
 
 ## Features
 
-- Fetches movies from **TMDb** based on a search query (e.g., genre, keyword, or actor).
-- Returns the **top 10 highly-rated movies** as a response.
-- Implements **GPTScript** for easy agent integration.
-- Built with **Node.js** for flexibility and scalability.
+- Analyze the sentiment based on user input to determine search query (e.g., genre, keyword, or actor).
+- Fetch movies from TMDb based on a search query.
+- Return the top 10 highly-rated movies as a response.
+- Use Node.js to implement the logic designed for integration with GPTScript.
 
 ---
 
 ## Project Structure
 
 ```yaml
-tmdb-movie-tool
+movie-concierge-tool
 ├── src
 │   ├── movieTool.js       # Main tool file to process agent input
 │   ├── movieService.js    # Service file for TMDb API interactions
 ├── .env                   # Environment variables (TMDb API key)
+├── movieConcierge.gpt     # GPTScript definition for sentiment analysis and prompt definition
 ├── package.json           # Dependencies and scripts
-├── tool.gpt               # GPTScript definition
-├── movieChat.gpt          # GPTScript definition
+├── tool.gpt               # Root GPTScript definition
 ```
 
 ---
@@ -44,14 +44,16 @@ Before you begin, make sure you have the following:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/tmdb-movie-tool.git
+   git clone https://github.com/your-username/movie-concierge.git
    cd tmdb-movie-tool
    ```
+
 2. Install project dependencies:
 
     ```bash
     npm install
     ```
+
 3. Create a `.env` file in the project root and add your `TMDb API` Key:
 
     ```bash
@@ -60,8 +62,13 @@ Before you begin, make sure you have the following:
 
 ---
 
-## Defining the Tool with GPTScript
-The tool.gpt file describes the tool's functionality, parameters, and execution steps.
+## Run the tool
+
+   ```bash
+   gptscript movieConcierge.gpt
+   ```
+
+---
 
 ## Explore Further
 

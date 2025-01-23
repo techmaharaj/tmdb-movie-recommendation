@@ -2,9 +2,7 @@ Name: fetch-movies
 Description: Fetches top-rated movies from TMDb based on a specified genre or keyword.
 Param: genre: The movie genre or keyword to fetch (e.g., "Action", "Romance", "Sci-Fi").
 
-echo "Genre: $genre"
-
-#!/usr/bin/env npm --silent --prefix ${GPTSCRIPT_TOOL_DIR} run tool -- recommend-movie "{$genre}"
+#!/usr/bin/env npm --silent --prefix ${GPTSCRIPT_TOOL_DIR} run tool -- recommend-movie
 
 ---
 
