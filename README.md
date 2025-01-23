@@ -45,7 +45,7 @@ Before you begin, make sure you have the following:
 
    ```bash
    git clone https://github.com/your-username/movie-concierge.git
-   cd tmdb-movie-tool
+   cd movie-concierge
    ```
 
 2. Install project dependencies:
